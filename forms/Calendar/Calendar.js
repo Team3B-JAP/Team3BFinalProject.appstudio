@@ -1,8 +1,8 @@
-hmbCal.onclick=function(s){
-  if (typeof(s) == "object") {   
+hmbCal.onclick=function(b){
+  if (typeof(b) == "object") {   
     return
   } else {
-  switch(s) {
+  switch(b) {
 case "List":
   ChangeForm(listView)
   break;

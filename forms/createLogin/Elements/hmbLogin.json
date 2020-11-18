@@ -37,7 +37,7 @@
   "mLeft": "",
   "mRight": "",
   "mTop": "",
-  "onclick": "",
+  "onclick": "hmbLogin.onclick()",
   "onmousedown": "",
   "onmousemove": "",
   "onmouseout": "",

@@ -1,9 +1,9 @@
 
-hmbList.onclick=function(s){
-  if (typeof(s) == "object") {   
+hmbList.onclick=function(x){
+  if (typeof(x) == "object") {   
     return
   } else {
-  switch(s) {
+  switch(x) {
 case "List":
   ChangeForm(listView)
   break;
@@ -42,7 +42,7 @@ drpCoupons.onclick=function(s){
     if (typeof(s) == "object")   
       return                    
     else {  
-      
+
       
 drpCoupons.onclick=function(s){
     if (typeof(s) == "object")
@@ -64,7 +64,8 @@ req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST
    if (req.status == 200) {
     coupon1 = JSON.parse(req.responseText)
     console.log(coupon1)
-  }  ;
+  } 
+  };
       
 
   if (drpCoupons.selection=="McDonalds"){
@@ -78,8 +79,8 @@ req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST
   }
         drpCoupons.value = s
       lblCoupon.value = `${drpCoupons.selection} is ${coupon1} and  is located at ${address1}`
-    }
 }
+
 
 
   

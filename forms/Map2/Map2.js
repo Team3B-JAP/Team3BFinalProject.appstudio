@@ -1,9 +1,9 @@
 
-hmbMap.onclick=function(s){
-  if (typeof(s) == "object") {   
+hmbMap.onclick=function(z){
+  if (typeof(z) == "object") {   
     return
   } else {
-  switch(s) {
+  switch(z) {
 case "List":
   ChangeForm(listView)
   break;
@@ -59,13 +59,15 @@ var currentLat,currentLong;
          position: point5
      });
      
-     
+          
      //Add an infoWindow to our marker
      infowindow = GoogleMap1.setInfoWindow("Lat: " + location.coords.latitude + " Lng: " + location.coords.longitude, marker);
      currentLat = location.coords.latitude;
      currentLong = location.coords.longitude;
      console.log("current lat is " + location.coords.latitude);
      NSB.WaitCursor(false);
+     
+
  };
  
   btnCL.onclick = function() {
