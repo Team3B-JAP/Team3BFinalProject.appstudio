@@ -10,10 +10,10 @@ case "Calendar":
   ChangeForm(Calendar)
   break;
 case "Map":
-  ChangeForm(Map2)
+  ChangeForm(Map4)
   break;
 case "Add Your Phone Number":
-  ChangeForm(createLogin)
+  ChangeForm(LoginNew3)
   break;
 }
 }

@@ -50,6 +50,38 @@
             "Map2",
             "Map2.json"
           ]
+        },
+        {
+          "!type": "External",
+          "file": [
+            "forms",
+            "LoginNew",
+            "LoginNew.json"
+          ]
+        },
+        {
+          "!type": "External",
+          "file": [
+            "forms",
+            "Map3",
+            "Map3.json"
+          ]
+        },
+        {
+          "!type": "External",
+          "file": [
+            "forms",
+            "Map4",
+            "Map4.json"
+          ]
+        },
+        {
+          "!type": "External",
+          "file": [
+            "forms",
+            "LoginNew3",
+            "LoginNew3.json"
+          ]
         }
       ],
       "configxml": null,
@@ -71,7 +103,7 @@
       "eslintRules": null,
       "expanded_pmp": null,
       "extraheaders": null,
-      "firstform": "listView",
+      "firstform": "LoginNew3",
       "fontFamily": "system",
       "googlePlayKey": "certificates/google.json",
       "googlePlayTrack": "production",

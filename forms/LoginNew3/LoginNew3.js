@@ -1,14 +1,14 @@
-/*
+
 let userName = ""
 let userPN = ""
 
-hmbLogin.onclick = function(s) {
+hmbLogin3.onclick = function(s) {
   if (typeof(s) == "object") {
     return
   } else {
     switch (s) {
       case "Add Your Phone Number":
-        ChangeForm(createLogin)
+        ChangeForm(LoginNew3)
         break;
       case "List":
         ChangeForm(listView)
@@ -17,7 +17,7 @@ hmbLogin.onclick = function(s) {
         ChangeForm(Calendar)
         break;
       case "Map":
-        ChangeForm(Map2)
+        ChangeForm(Map4)
         break;
  
   }
@@ -25,20 +25,18 @@ hmbLogin.onclick = function(s) {
 }
 ;
  
-btnAdd.onclick = function() {
-userName = txtName.value 
-userPN = txtPN.value
+btnAdd3.onclick = function() {
+userName = txtName3.value 
+userPN = txtPN3.value
   query = "INSERT INTO users (name,phone) VALUES " + "("+ "'" + userName + "'," + "'" + userPN + "'" + ")"
   req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=jat82519&pass=" + pw + "&database=jat82519&query=" + query)
 
   if (req.status == 200) {
     if (req.responseText == 500) 
-      alert("You have successfully added to the text list!");
+      lblHeader3.value = "You have successfully added to the text list!";
     else
-      alert("There was a problem with adding your name and number");
+      lblHeader3.value = "There was a problem with adding your name and number";
   }  else 
     console.log("Error: " + req.status);
 
 };
-*/
-

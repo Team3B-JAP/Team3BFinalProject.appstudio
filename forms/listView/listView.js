@@ -1,9 +1,9 @@
 
-hmbList.onclick=function(x){
-  if (typeof(x) == "object") {   
+hmbList.onclick=function(s){
+  if (typeof(s) == "object") {   
     return
   } else {
-  switch(x) {
+  switch(s) {
 case "List":
   ChangeForm(listView)
   break;
@@ -11,14 +11,14 @@ case "Calendar":
   ChangeForm(Calendar)
   break;
 case "Map":
-  ChangeForm(Map2)
+  ChangeForm(Map4)
   break;
 case "Add Your Phone Number":
-  ChangeForm(createLogin)
+  ChangeForm(LoginNew3)
   break;
 }
 }
-}
+};
 
 
 var couponList = ['McDonalds','Hyvee','Popeyes','Subway']
@@ -29,6 +29,7 @@ let req = ""
 let query = ""
 let results = ""
 let pw = "JTjt3688!"
+
 
 listView.onshow=function(){
     drpCoupons.clear()   
@@ -80,16 +81,6 @@ req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST
         drpCoupons.value = s
       lblCoupon.value = `${drpCoupons.selection} is ${coupon1} and  is located at ${address1}`
 }
-
-
-
-  
-  
-  
-  
-  
-
-
 
 
 
