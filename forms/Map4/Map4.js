@@ -18,7 +18,7 @@ case "Add Your Phone Number":
   break;
 }
 }
-}
+};
 
 var marker;
 var infowindow;
